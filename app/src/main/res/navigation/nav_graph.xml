@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/studnetSignUpFragment"
+        android:name="com.example.hostelleaveapp.Ui.Student.StudnetSignUpFragment"
+        android:label="StudnetSignUpFragment" >
+        <action
+            android:id="@+id/action_studnetSignUpFragment_to_studentMainFragment"
+            app:destination="@id/studentMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentMainFragment"
+        android:name="com.example.hostelleaveapp.Ui.Student.StudentMainFragment"
+        android:label="fragment_student_main"
+        tools:layout="@layout/fragment_student_main" >
+        <action
+            android:id="@+id/action_studentMainFragment_to_leaveHistoryFragment"
+            app:destination="@id/leaveHistoryFragment" />
+        <action
+            android:id="@+id/action_studentMainFragment_to_leaveApplyFragment"
+            app:destination="@id/leaveApplyFragment" />
+        <action
+            android:id="@+id/action_studentMainFragment_to_roleSelectFragment"
+            app:destination="@id/roleSelectFragment" />
+        <action
+            android:id="@+id/action_studentMainFragment_to_chatHomeFragment"
+            app:destination="@id/chatHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaveApplyFragment"
+        android:name="com.example.hostelleaveapp.Ui.Student.LeaveApplyFragment"
+        android:label="LeaveApplyFragment" >
+        <action
+            android:id="@+id/action_leaveApplyFragment_to_studentMainFragment"
+            app:destination="@id/studentMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.hostelleaveapp.StartingInterface.SplashScreenFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_roleSelectFragment"
+            app:destination="@id/roleSelectFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_studentMainFragment"
+            app:destination="@id/studentMainFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_wardenMainFragment"
+            app:destination="@id/wardenMainFragment" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_guardMainScreenFragment"
+            app:destination="@id/guardMainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaveHistoryFragment"
+        android:name="com.example.hostelleaveapp.Ui.Student.LeaveHistoryFragment"
+        android:label="LeaveHistoryFragment" />
+    <fragment
+        android:id="@+id/leaveRequestFragment"
+        android:name="com.example.hostelleaveapp.Ui.Warden.LeaveRequestFragment"
+        android:label="LeaveRequestFragment" />
+    <fragment
+        android:id="@+id/wardenMainFragment"
+        android:name="com.example.hostelleaveapp.Ui.Warden.WardenMainFragment"
+        android:label="WardenMainFragment" >
+        <action
+            android:id="@+id/action_wardenMainFragment_to_leaveRequestFragment"
+            app:destination="@id/leaveRequestFragment" />
+        <action
+            android:id="@+id/action_wardenMainFragment_to_chatHomeFragment"
+            app:destination="@id/chatHomeFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/signupOptionBottomSheet"
+        android:name="com.example.hostelleaveapp.StartingInterface.SignupOptionBottomSheet"
+        android:label="SignupOptionBottomSheet" />
+    <fragment
+        android:id="@+id/wardenSignUpFragment"
+        android:name="com.example.hostelleaveapp.Ui.Warden.WardenSignUpFragment"
+        android:label="WardenSignUpFragment" >
+        <action
+            android:id="@+id/action_wardenSignUpFragment_to_wardenMainFragment"
+            app:destination="@id/wardenMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guardMainScreenFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.GuardMainScreenFragment"
+        android:label="GuardMainScreenFragment" >
+        <action
+            android:id="@+id/action_guardMainScreenFragment_to_barCodeFragment"
+            app:destination="@id/barCodeFragment" />
+        <action
+            android:id="@+id/action_guardMainScreenFragment_to_allOutStudentFragment"
+            app:destination="@id/allOutStudentFragment" />
+        <action
+            android:id="@+id/action_guardMainScreenFragment_to_studentBarCodeInFragment"
+            app:destination="@id/studentBarCodeInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/barCodeFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.BarCodeFragment"
+        android:label="fragment_bar_code"
+        tools:layout="@layout/fragment_bar_code" >
+        <action
+            android:id="@+id/action_barCodeFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roleSelectFragment"
+        android:name="com.example.hostelleaveapp.StartingInterface.RoleSelectFragment"
+        android:label="RoleSelectFragment" >
+        <action
+            android:id="@+id/action_roleSelectFragment_to_wardenSignUpFragment"
+            app:destination="@id/wardenSignUpFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_guardMainScreenFragment"
+            app:destination="@id/guardMainScreenFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_studnetSignUpFragment"
+            app:destination="@id/studnetSignUpFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_guardSignUpFragment"
+            app:destination="@id/guardSignUpFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_guardLoginFragment"
+            app:destination="@id/guardLoginFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_studentLogInFragment"
+            app:destination="@id/studentLogInFragment" />
+        <action
+            android:id="@+id/action_roleSelectFragment_to_wardenLoginFragment"
+            app:destination="@id/wardenLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.StudentDetailFragment"
+        android:label="StudentDetailFragment" >
+        <action
+            android:id="@+id/action_studentDetailFragment_to_faceCameraFragment"
+            app:destination="@id/faceCameraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allOutStudentFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.AllOutStudentFragment"
+        android:label="AllOutStudentFragment" />
+    <fragment
+        android:id="@+id/guardSignUpFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.GuardSignUpFragment"
+        android:label="GuardSignUpFragment" >
+        <action
+            android:id="@+id/action_guardSignUpFragment_to_guardMainScreenFragment"
+            app:destination="@id/guardMainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guardLoginFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.GuardLoginFragment"
+        android:label="GuardLoginFragment" >
+        <action
+            android:id="@+id/action_guardLoginFragment_to_guardSignUpFragment"
+            app:destination="@id/guardSignUpFragment" />
+        <action
+            android:id="@+id/action_guardLoginFragment_to_guardMainScreenFragment"
+            app:destination="@id/guardMainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wardenFragment"
+        android:name="com.example.hostelleaveapp.Ui.Warden.WardenFragment"
+        android:label="fragment_warden"
+        tools:layout="@layout/fragment_warden" />
+    <fragment
+        android:id="@+id/studentLogInFragment"
+        android:name="com.example.hostelleaveapp.Ui.Student.StudentLogInFragment"
+        android:label="StudentLogInFragment" >
+        <action
+            android:id="@+id/action_studentLogInFragment_to_studnetSignUpFragment"
+            app:destination="@id/studnetSignUpFragment" />
+        <action
+            android:id="@+id/action_studentLogInFragment_to_studentMainFragment"
+            app:destination="@id/studentMainFragment" />
+        <action
+            android:id="@+id/action_studentLogInFragment_to_studentMainFragment2"
+            app:destination="@id/studentMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wardenLoginFragment"
+        android:name="com.example.hostelleaveapp.Ui.Warden.WardenLoginFragment"
+        android:label="fragment_warden_login"
+        tools:layout="@layout/fragment_warden_login" >
+        <action
+            android:id="@+id/action_wardenLoginFragment_to_wardenSignUpFragment"
+            app:destination="@id/wardenSignUpFragment" />
+        <action
+            android:id="@+id/action_wardenLoginFragment_to_wardenMainFragment"
+            app:destination="@id/wardenMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentBarCodeInFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.StudentBarCodeInFragment"
+        android:label="fragment_student_bar_code_in"
+        tools:layout="@layout/fragment_student_bar_code_in" />
+    <fragment
+        android:id="@+id/addPersonMessageFragment"
+        android:name="com.example.hostelleaveapp.Chat.AddPersonMessageFragment"
+        android:label="AddPersonMessageFragment" >
+        <action
+            android:id="@+id/action_addPersonMessageFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.hostelleaveapp.Chat.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/chatHomeFragment"
+        android:name="com.example.hostelleaveapp.Chat.ChatHomeFragment"
+        android:label="ChatHomeFragment" >
+        <action
+            android:id="@+id/action_chatHomeFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_chatHomeFragment_to_addPersonMessageFragment"
+            app:destination="@id/addPersonMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faceCameraFragment"
+        android:name="com.example.hostelleaveapp.Ui.Guard.FaceCameraFragment"
+        android:label="FaceCameraFragment" >
+        <action
+            android:id="@+id/action_faceCameraFragment_to_studentDetailFragment"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+</navigation>

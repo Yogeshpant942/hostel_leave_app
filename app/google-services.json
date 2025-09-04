@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474913550167",
+    "project_id": "hostelapp-dbb24",
+    "storage_bucket": "hostelapp-dbb24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474913550167:android:58ecfb522c70b67aba9812",
+        "android_client_info": {
+          "package_name": "com.example.hostelleaveapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB16ZDmXnK5NvM6ilxz7-R_UWrBVVM5LWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

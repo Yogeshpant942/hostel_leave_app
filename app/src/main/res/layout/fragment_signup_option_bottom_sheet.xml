@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/signupOptionsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Signup Role"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Signup Options -->
+    <TextView
+        android:id="@+id/signupWarden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up as Warden"
+        android:padding="14dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/option_background"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/signupStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up as Student"
+        android:padding="14dp"
+        android:gravity="center"
+        android:background="@drawable/option_background"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/signupGuard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up as Guard"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="14dp"
+        android:background="@drawable/option_background"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
