@@ -77,14 +77,14 @@ Copy code
 /app/src/main/assets/
 If keys are leaked, rotate them in Google Cloud Console.
 
-📱 Usage Flow
+📱 USAGE FLOW
 Student logs in and applies for leave.
 
 Warden/Admin reviews the request and either approves or rejects it.
 
 Student gets notified instantly about the status.
 
-🛠️ Future Enhancements
+🛠️ FUTURE ENHANCEMENT
 Multi-role access (Student, Warden, Admin)
 
 Leave analytics dashboard for admins
@@ -106,7 +106,7 @@ Push to the branch (git push origin feature-name)
 
 Open a Pull Request
 
-📄 License
+📄 LICENCE
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute this project with attribution.
 
@@ -121,6 +121,3 @@ Do you also want me to **add badges** (like build status, license, Firebase) at 
 
 
 
-
-
-Ask ChatGPT
