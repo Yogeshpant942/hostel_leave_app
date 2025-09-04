@@ -31,11 +31,9 @@ class WardenMainFragment : Fragment() {
         viewModel = ViewModelProvider(this, factory)[signUpViewmodel::class.java]
 
         viewModel.getWardenDetail()
-
         viewModel.Student_detail.observe(viewLifecycleOwner) { warden ->
             if (warden != null) {
                 binding.wardenName.text = warden.name
-
                 warden.image?.let { base64String ->
                     try {
                         Log.d(TAG, "Original Base64 length from Firestore: ${base64String.length}")
@@ -75,7 +73,6 @@ class WardenMainFragment : Fragment() {
         }
 
         setupNavigation()
-
         binding.btnLogout.setOnClickListener {
             viewModel.logOutUser()
         }
